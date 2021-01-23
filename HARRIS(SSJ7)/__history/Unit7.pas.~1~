@@ -1,0 +1,38 @@
+unit Unit7;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.ExtCtrls, Vcl.DBCtrls,
+  Vcl.StdCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls;
+
+type
+  TForm7 = class(TForm)
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    Label3: TLabel;
+    Label4: TLabel;
+    TabSheet2: TTabSheet;
+    DBGrid3: TDBGrid;
+    Button1: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Timer1: TTimer;
+    DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
+    DBGrid2: TDBGrid;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form7: TForm7;
+
+implementation
+ uses datamodule;
+{$R *.dfm}
+
+end.

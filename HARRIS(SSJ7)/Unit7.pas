@@ -1,0 +1,85 @@
+unit Unit7;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.ExtCtrls, Vcl.DBCtrls,
+  Vcl.StdCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls, frxClass, frxDBSet;
+
+type
+  TForm7 = class(TForm)
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    Label3: TLabel;
+    Label4: TLabel;
+    TabSheet2: TTabSheet;
+    DBGrid3: TDBGrid;
+    Button1: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Timer1: TTimer;
+    DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
+    DBGrid2: TDBGrid;
+    DBNavigator2: TDBNavigator;
+    Button2: TButton;
+    frxDBDataset1: TfrxDBDataset;
+    frxReport1: TfrxReport;
+    Button3: TButton;
+    frxDBDataset2: TfrxDBDataset;
+    frxDBDataset3: TfrxDBDataset;
+    frxReport2: TfrxReport;
+    procedure Timer1Timer(Sender: TObject);
+    procedure TabSheet1ContextPopup(Sender: TObject; MousePos: TPoint;
+      var Handled: Boolean);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form7: TForm7;
+
+implementation
+ uses datamodule;
+{$R *.dfm}
+
+procedure TForm7.Button2Click(Sender: TObject);
+begin
+frxreport1.ShowReport();
+end;
+
+procedure TForm7.Button3Click(Sender: TObject);
+begin
+frxreport2.ShowReport();
+end;
+
+procedure TForm7.TabSheet1ContextPopup(Sender: TObject; MousePos: TPoint;
+  var Handled: Boolean);
+begin
+if dm.ADODetailBeil.State=dsinsert then begin
+  if dm.ADOBarang.Locate('Kode',dm.ADODetailBeilKode.Value,[LoPartialKey]) then
+  begin
+      dm.ADOBarang.Edit;
+      dm.ADOBarangStock.value:=dm.ADOBarangStock.Value-dm.ADODetailBeilJumlah.Value;
+      dm.ADOBarang.Post;
+
+  end;
+end;
+
+end;
+
+procedure TForm7.Timer1Timer(Sender: TObject);
+begin
+label3.Caption:=formatDateTime('DD/mm/YYYY HH:MM:SS',now());
+
+case dm.DSDetailJual.State  of
+dsinactive:label4.Caption:='status table:dsinactive';
+dsBrowse:Label4.Caption:='status table:dsInsert'; dsEdit:label4.Caption:='status table:dsedit';
+end;
+  end;
+end.

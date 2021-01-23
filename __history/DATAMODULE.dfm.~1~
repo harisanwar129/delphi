@@ -1,0 +1,53 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 434
+  Width = 675
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=MSDASQL.1;Persist Security Info=False;Data Source=Prakt' +
+      'ikum;Initial Catalog=praktikum'
+    LoginPrompt = False
+    Left = 336
+    Top = 64
+  end
+  object ADOUsers: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'users'
+    Left = 56
+    Top = 120
+  end
+  object DSUsers: TDataSource
+    DataSet = ADOUsers
+    Left = 136
+    Top = 120
+  end
+  object ADOBarang: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'barang'
+    Left = 248
+    Top = 128
+  end
+  object DSBarang: TDataSource
+    DataSet = ADOBarang
+    Left = 320
+    Top = 128
+  end
+  object ADSuplayer: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'suplayer'
+    Left = 424
+    Top = 136
+  end
+  object DSSuplayer: TDataSource
+    DataSet = ADSuplayer
+    Left = 496
+    Top = 136
+  end
+end

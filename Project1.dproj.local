@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/11/17 22:28:46.000.611,=C:\Users\haris\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/11/17 22:30:47.000.713,=C:\Users\haris\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/11/17 22:39:56.000.854,C:\Users\haris\Documents\Embarcadero\Studio\Projects\DM.pas=C:\Users\haris\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/11/17 22:39:56.000.854,C:\Users\haris\Documents\Embarcadero\Studio\Projects\DM.dfm=C:\Users\haris\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2020/11/17 22:40:22.000.295,C:\Users\haris\Documents\Embarcadero\Studio\Projects\DATAMODULE.dfm=C:\Users\haris\Documents\Embarcadero\Studio\Projects\DM.dfm</Transaction>
+    <Transaction>2020/11/17 22:40:22.000.295,C:\Users\haris\Documents\Embarcadero\Studio\Projects\DATAMODULE.pas=C:\Users\haris\Documents\Embarcadero\Studio\Projects\DM.pas</Transaction>
+    <Transaction>2020/11/17 23:42:21.000.956,D:\kuliah\delphi\Praktikum\Unit1.dfm=C:\Users\haris\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/11/17 23:42:21.000.956,D:\kuliah\delphi\Praktikum\Unit1.pas=C:\Users\haris\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/11/17 23:42:24.000.668,D:\kuliah\delphi\Praktikum\DATAMODULE.pas=C:\Users\haris\Documents\Embarcadero\Studio\Projects\DATAMODULE.pas</Transaction>
+    <Transaction>2020/11/17 23:42:24.000.668,D:\kuliah\delphi\Praktikum\DATAMODULE.dfm=C:\Users\haris\Documents\Embarcadero\Studio\Projects\DATAMODULE.dfm</Transaction>
+    <Transaction>2020/11/17 23:42:29.000.505,D:\kuliah\delphi\Praktikum\Project1.dproj=C:\Users\haris\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/11/21 08:37:46.000.775,D:\kuliah\delphi\Praktikum\Project1.dproj=D:\kuliah\delphi\Praktikum\Project1.dproj</Transaction>
+    <Transaction>2020/11/21 08:41:03.000.375,=D:\kuliah\delphi\Praktikum\Unit2.pas</Transaction>
+    <Transaction>2020/11/21 09:19:32.000.819,=D:\kuliah\delphi\Praktikum\Unit3.pas</Transaction>
+    <Transaction>2020/11/21 14:17:33.000.464,=D:\kuliah\delphi\Praktikum\Unit4.pas</Transaction>
+    <Transaction>2020/11/21 14:52:34.000.120,=D:\kuliah\delphi\Praktikum\Unit5.pas</Transaction>
+    <Transaction>2020/11/21 17:00:25.000.211,=D:\kuliah\delphi\Praktikum\Unit6.pas</Transaction>
+    <Transaction>2020/11/21 17:47:36.000.501,=D:\kuliah\delphi\Praktikum\Unit7.pas</Transaction>
+    <Transaction>2020/11/25 08:43:38.000.475,=D:\kuliah\delphi\Praktikum\Unit8.pas</Transaction>
+  </Transactions>
+</BorlandProject>
